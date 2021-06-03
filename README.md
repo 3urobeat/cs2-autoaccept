@@ -2,7 +2,7 @@
 This C# script automatically accepts CS:GO matches for you by analyzing your screen every 4 seconds and moving your mouse when it detects the 'Accept' button.  
 Since this script does not interfere with any game files it should be completely VAC safe.  
 
-![Screenshot](https://raw.githubusercontent.com/HerrEurobeat/csgo-autoaccept/master/.github/img/demo.png)  
+![Screenshot](https://raw.githubusercontent.com/HerrEurobeat/csgo-autoaccept/master/.github/img/showcase.png)  
 
 Note: This script sadly **only supports Windows** at the moment as I was not able to find any method to move and click with the mouse on Linux.  
 
