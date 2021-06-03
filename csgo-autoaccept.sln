@@ -1,0 +1,21 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csgo-autoaccept", "csgo-autoaccept.csproj", "{2F7C995A-DA88-4B2D-9D4A-629C4E1E4198}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F7C995A-DA88-4B2D-9D4A-629C4E1E4198}.Debug|x86.ActiveCfg = Debug|x86
+		{2F7C995A-DA88-4B2D-9D4A-629C4E1E4198}.Debug|x86.Build.0 = Debug|x86
+		{2F7C995A-DA88-4B2D-9D4A-629C4E1E4198}.Release|x86.ActiveCfg = Release|x86
+		{2F7C995A-DA88-4B2D-9D4A-629C4E1E4198}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		version = 1.0
+		description = A script to automatically accept csgo matches that works by image scanning.
+	EndGlobalSection
+EndGlobal
