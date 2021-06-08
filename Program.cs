@@ -20,7 +20,7 @@ namespace csgoautoaccept
         public static void Main()
         {
 
-            var version = "1.0";
+            var version = "1.1";
             int checkInterval = 4000; //time in ms between searches
 
             Console.WriteLine("\ncsgo-autoaccept script version {0} by 3urobeat", version);
@@ -35,7 +35,7 @@ namespace csgoautoaccept
             aTimer.Elapsed += OnTimedEvent; //Hook up the Elapsed event for the timer
             aTimer.Enabled = true; //Start the timer (will automatically reset because AutoReset is true by default)
 
-            Console.ReadKey(); //prevents window from instantly closing
+            while (true) {} //prevents window from instantly closing
         }
 
 
