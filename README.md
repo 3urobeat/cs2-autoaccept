@@ -14,7 +14,7 @@ Head over to the [release section](https://github.com/HerrEurobeat/csgo-autoacce
   
 > Be aware that the Windows Defender likes to throw false-positives. While testing this `.exe` got flagged as a trojan multiple times even when building it directly on Windows.  
   
-VirusTotal Scan: https://www.virustotal.com/gui/file/37577c0492b7b7a04bca548ac798263a7137d3b2bd56c32b1cb112c6ca7f069e/detection  
+VirusTotal Scan: https://www.virustotal.com/gui/file/24b69361e5ec9ad580bf6bbbad5eed03938e0af6bbca00d3fbdfb706440758cc/detection  
 
 
 **Slightly harder way if you don't trust the exe compiled by me:**  
