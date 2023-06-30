@@ -2,14 +2,14 @@
 This C# script automatically accepts CS:GO matches for you by analyzing your screen every 4 seconds and moving your mouse when it detects the 'Accept' button.  
 Since this script does not interfere with any game files it should be completely VAC safe.  
 
-This script is for Windows only. If you are on Linux see [my other repository for a Linux version.](https://github.com/HerrEurobeat/csgo-autoaccept-cpp)  
+This script is for Windows only. If you are on Linux see [my other repository for a Linux version.](https://github.com/3urobeat/csgo-autoaccept-cpp)  
 
-![Screenshot](https://raw.githubusercontent.com/HerrEurobeat/csgo-autoaccept/master/.github/img/showcase.png)  
+![Screenshot](https://raw.githubusercontent.com/3urobeat/csgo-autoaccept/master/.github/img/showcase.png)  
 
 
 ## Download
 **Easy way:**  
-Head over to the [release section](https://github.com/HerrEurobeat/csgo-autoaccept/releases/latest) and download the latest `.exe`.  
+Head over to the [release section](https://github.com/3urobeat/csgo-autoaccept/releases/latest) and download the latest `.exe`.  
   
   
 > Be aware that the Windows Defender likes to throw false-positives. While testing this `.exe` got flagged as a trojan multiple times even when building it directly on Windows.  
