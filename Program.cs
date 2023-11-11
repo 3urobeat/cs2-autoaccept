@@ -42,7 +42,11 @@ namespace cs2autoaccept
             String version       = "1.1";
             int    checkInterval = 4000;  // Time in ms between searches
 
+            Console.Title = "cs2-autoaccept v" + version + " by 3urobeat";
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("\n            cs2-autoaccept version {0} by 3urobeat", version);
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("---------------------------------------------------------------");
             Console.WriteLine("Checking your screen for a 'Accept' window every {0} second(s)...\n", checkInterval / 1000);
 
@@ -94,8 +98,9 @@ namespace cs2autoaccept
 
                         if (matches > 10000) // If we got 10000 matching pixels then it surely is the Accept button
                         {
-                            Console.WriteLine("\r--------------------------------------------");
-                            Console.WriteLine($"[{i}] Found button! Accepting match...");
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine($"\r[{i}] Found button! Accepting match...");
+                            Console.ForegroundColor = ConsoleColor.White;
                             Console.WriteLine("\nIf everyone accepted and you are in the loading screen then please close this window.\nI will otherwise continue searching.\n");
 
                             // Setting cursor position to the current pixel (which must be part of the button) and clicking
