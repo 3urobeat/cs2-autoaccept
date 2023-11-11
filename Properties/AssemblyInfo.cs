@@ -4,8 +4,8 @@ using System.Runtime.CompilerServices;
 // Information about this assembly is defined by the following attributes. 
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle("csgo-autoaccept")]
-[assembly: AssemblyDescription("A script to automatically accept csgo matches that works by image scanning.")]
+[assembly: AssemblyTitle("cs2-autoaccept")]
+[assembly: AssemblyDescription("Automatically accept Counter-Strike 2 matches on Windows using image scanning")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("")]
