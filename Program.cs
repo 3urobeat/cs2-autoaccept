@@ -1,10 +1,10 @@
 ﻿/*
  * File: Program.cs
- * Project: csgo-autoaccept
+ * Project: cs2-autoaccept
  * Created Date: 03.06.2021 10:27:00
  * Author: 3urobeat
  *
- * Last Modified: 11.11.2023 12:24:02
+ * Last Modified: 11.11.2023 17:51:32
  * Modified By: 3urobeat
  *
  * Copyright (c) 2021 3urobeat <https://github.com/3urobeat>
@@ -22,7 +22,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
 
-namespace csgoautoaccept
+namespace cs2autoaccept
 {
     class MainClass
     {
@@ -42,9 +42,9 @@ namespace csgoautoaccept
             String version       = "1.1";
             int    checkInterval = 4000;  // Time in ms between searches
 
-            Console.WriteLine("\ncsgo-autoaccept script version {0} by 3urobeat", version);
-            Console.WriteLine("---------------------------------------------------");
-            Console.WriteLine("\nChecking for 'Accept' window every {0} second(s)...", checkInterval / 1000);
+            Console.WriteLine("\n            cs2-autoaccept version {0} by 3urobeat", version);
+            Console.WriteLine("---------------------------------------------------------------");
+            Console.WriteLine("Checking your screen for a 'Accept' window every {0} second(s)...\n", checkInterval / 1000);
 
 
             // Interval using a timer: https://docs.microsoft.com/de-de/dotnet/api/system.timers.timer.interval?view=net-5.0
@@ -72,7 +72,7 @@ namespace csgoautoaccept
             gp.CopyFromScreen(Screen.PrimaryScreen.Bounds.X, Screen.PrimaryScreen.Bounds.Y, 0, 0, Screen.PrimaryScreen.Bounds.Size);
 
 
-            // Search the bitmap for large amount of green pixels (Thanks for the idea: https://github.com/davidarroyo1234/CSGO-AutoAccept/blob/ce86bfce3628d7306b6886c840b9ddef8bac436b/Program.cs#L100)
+            // Search the bitmap for large amount of green pixels
             // This should be better than for example searching for the accept button with a dummy image because different languages or resolutions could probably affect the result
 
             // Define the two colors the Accept button is made out of (see accept_button.jpg in repo for reference)
@@ -111,6 +111,9 @@ namespace csgoautoaccept
                     }
                 }
             }
+
+            // Console.WriteLine("Matches: " + matches.ToString()); // Enable to debug amount of matches found
+
 
             // Clean up when we are done checking this screenshot
             bm = null;
