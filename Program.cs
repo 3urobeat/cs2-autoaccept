@@ -39,7 +39,7 @@ namespace cs2autoaccept
         // Entry point
         public static void Main()
         {
-            String version       = "1.1";
+            String version       = "1.2";
             int    checkInterval = 4000;  // Time in ms between searches
 
             Console.Title = "cs2-autoaccept v" + version + " by 3urobeat";
