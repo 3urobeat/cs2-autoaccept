@@ -44,7 +44,7 @@ namespace csgoautoaccept
 
             Console.WriteLine("\ncsgo-autoaccept script version {0} by 3urobeat", version);
             Console.WriteLine("---------------------------------------------------");
-            Console.WriteLine("\nChecking for 'Accept' window every {0} seconds...", checkInterval / 1000);
+            Console.WriteLine("\nChecking for 'Accept' window every {0} second(s)...", checkInterval / 1000);
 
 
             // Interval using a timer: https://docs.microsoft.com/de-de/dotnet/api/system.timers.timer.interval?view=net-5.0
@@ -75,11 +75,11 @@ namespace csgoautoaccept
             // Search the bitmap for large amount of green pixels (Thanks for the idea: https://github.com/davidarroyo1234/CSGO-AutoAccept/blob/ce86bfce3628d7306b6886c840b9ddef8bac436b/Program.cs#L100)
             // This should be better than for example searching for the accept button with a dummy image because different languages or resolutions could probably affect the result
 
-            // Define the two colors the Accept button is made out of (see accept_button.png in repo for reference)
-            Color color1 = Color.FromArgb(76, 175, 80); // https://docs.microsoft.com/en-us/dotnet/api/system.drawing.color.fromargb?view=net-5.0#System_Drawing_Color_FromArgb_System_Int32_System_Int32_System_Int32_
-            Color color2 = Color.FromArgb(32, 90, 19);
+            // Define the two colors the Accept button is made out of (see accept_button.jpg in repo for reference)
+            Color color1 = Color.FromArgb(54, 183, 82); // https://docs.microsoft.com/en-us/dotnet/api/system.drawing.color.fromargb?view=net-5.0#System_Drawing_Color_FromArgb_System_Int32_System_Int32_System_Int32_
+            Color color2 = Color.FromArgb(20, 61, 11);
 
-            int matches = 0;        // Count the amount of matching pixels
+            int  matches   = 0;     // Count the amount of matching pixels
             bool breakLoop = false; // Can be set to true to prematurely abort loop if we found enough matching pixels
 
             for (int x = 0; x < bm.Width && !breakLoop; x++) // Iterate over all pixels in x range
