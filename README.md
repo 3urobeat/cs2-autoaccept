@@ -3,7 +3,7 @@ This C# script automatically accepts Counter-Strike 2 matches for you.
 It does this by analyzing your screen every 4 seconds and moving and clicking with your mouse when it detects the 'Accept' button.  
 Since this script does not interfere with any game files and just takes screenshots of your display it is completely VAC safe.  
 
-This script is for Windows only. If you are on Linux, please see [my other repository.](https://github.com/3urobeat/cs2-autoaccept-cpp)  
+This script is for Windows only. If you are on Linux, please see [my other repository.](https://github.com/3urobeat/cs2-autoaccept-linux)  
 
 ![Screenshot](https://raw.githubusercontent.com/3urobeat/cs2-autoaccept/master/.github/img/showcase.png)  
 
